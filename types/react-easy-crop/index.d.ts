@@ -51,6 +51,8 @@ export interface CropperProps {
     };
     restrictPosition?: boolean;
     initialCroppedAreaPixels?: Area;
+    onInteractionStart(): void,
+    onInteractionEnd(): void
 }
 
 declare class Cropper extends Component<CropperProps> {}
